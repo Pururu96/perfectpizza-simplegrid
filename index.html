@@ -6,78 +6,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Pizza</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="simplegrid.css">
     <script src="https://kit.fontawesome.com/1abd1e7e05.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-color: #2a9d8f;
+        }
+
+        .box_model {
+            border-radius: 1em;
+        }
+
+        .small_pizza {
+            background-color: #e9c46a;
+        }
+
+        .medium_pizza {
+            background-color: #f4a261;
+        }
+
+        .large_pizza {
+            background-color: #e76f51;
+        }
+
+        .contact_details {
+            background-color: #a8dadc;
+        }
+
+        .fa-instagram {
+            color: red;
+        }
+
+        .fa-facebook {
+            color: navy;
+        }
+
+        .fa-twitter {
+            color: dodgerblue;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Perfect Pizza</h1>
+    <h1 class="center">Perfect Pizza</h1>
+    <div class="container">
 
-    <div class="pizzas">
-        <div class="box_format small_pizza">
-            <h2>Small Pizza</h2>
-            <div class="image">
+        <div class="row">
+            <div class="col-4 center small_pizza box_model">
+                <h2>Small Pizza</h2>
                 <img src="pizzavector.png" width="150">
 
-            </div>
-            <h3 class="contacts">
-                R49.00
-            </h3>
-            <div class="location">
-                With three toppings on all flavors. <br>
-                Add extra cheese for R10.
-                 </div>
-        </div>
-        <div class="box_format medium_pizza">
-            <h2>Medium Pizza</h2>
-            <div class="image">
-                <img src="pizzavector.png" width="175">
-
-            </div>
-            <h3 class="contacts">
-                R89.00
-            </h3>
-            <div class="location">
-                With three toppings on all flavors. <br>
-                Add extra cheese for R15.
-            </div>
-        </div>
-
-
-        <div class="box_format large_pizza">
-            <h2>Large Pizza</h2>
-            <div class="image">
-                <img src="pizzavector.png" width="200">
-
-            </div>
-            <h3 class="contacts">
-                R129.00
-                <br>
-            </h3>
-            <div class="location">
-                With three toppings on all flavors. <br>
-                Add extra cheese for R20.
+                <h3>
+                    49.90
+                </h3>
+                <div>
+                    With three toppings on all flavors. <br>
+                    Add extra cheese for R10.
+                </div>
             </div>
 
+            <div class="col-4 center medium_pizza box_model">
+                <h2>Medium Pizza</h2>
+                <img src="pizzavector.png" width="150">
+
+                <h3>
+                    R89.00
+                </h3>
+                <div>
+                    With three toppings on all flavors. <br>
+                    Add extra cheese for R15.
+                </div>
+            </div>
+
+            <div class="col-4 center large_pizza box_model">
+                <h2>Large Pizza</h2>
+                <img src="pizzavector.png" width="150">
+                <h3>
+                    R129.00
+                </h3>
+                <div>
+                    With three toppings on all flavors. <br>
+                    Add extra cheese for R20.
+                </div>
+            </div>
         </div>
     </div>
+    <div class="container col-12 center contact_details box_model">
+        <h2 class="center">Contact Details</h2>
+        <p>
+            Telephone: 012 798 5648 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            Pizza Plaza<br>
 
-    <div class="box_format contact_details">
-        <h2>Contact Details</h2>
-        <p class="contacts">
-            <i class="fas fa-phone"></i>: 012 798 5648 <br>
-            <i class="far fa-envelope-open"></i>: info@perfectpizza.co.za <br>
-            <i class="fab fa-instagram"></i><i class="fab fa-facebook"></i><i class="fab fa-twitter"></i>: @perfectpizza
-        </p>
+            <i class="far fa-envelope-open"></i>: info@perfectpizza.co.za &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            Dough Road<br>
 
-        <p class="location">
-            Pizza Plaza <br>
-            Dough Road <br>
+            <i class="fab fa-instagram"></i><i class="fab fa-facebook"></i><i class="fab fa-twitter"></i>:@perfectpizza
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp
             Base Town
         </p>
     </div>
-
-
 </body>
 
 </html>
